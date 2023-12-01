@@ -1,0 +1,47 @@
+{
+  "name": "node-media-server",
+  "version": "1.0.0",
+  "description": "Node.js Media Server",
+  "license": "MIT",
+  "main": "index",
+  "author": {
+    "name": "Gennady Kozlenko",
+    "email": "gennadiy.kozlenko@gmail.com",
+    "url": "https://github.com/gkozlenko/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gkozlenko/node-media-server.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [
+    "video",
+    "media server",
+    "mp4",
+    "mov",
+    "flv",
+    "hls",
+    "m3u8",
+    "mpeg-ts"
+  ],
+  "scripts": {
+    "prepare": "npm prune",
+    "start": "node ./index.js",
+    "lint": "eslint \"./**/*.js\""
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "intel": "^1.2.0",
+    "lodash": "^4.17.21",
+    "logrotate-stream": "^0.2.9",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "node-video-lib": "^2.2.3"
+  }
+}
